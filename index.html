@@ -2,7 +2,6 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--Aquí se agrega la librería de MindAR para reconocimiento facial cambiar "image" por "face"-->
   <script src="./libs/mindar-face-three.prod.js"></script>
   <script src="./main.js" type="module"></script>
 
@@ -15,10 +14,19 @@
       height: 100%;
       overflow: hidden
     }
+
+    #switch {
+      position: fixed;
+      bottom: 5px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
+    }
   </style>
 </head>
 
 <body>
+  <button id="switch">Switch</button>
 </body>
 
 </html>

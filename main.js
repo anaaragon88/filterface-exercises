@@ -32,6 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
     faceMesh.material.needsUpdate = true;
     scene.add(faceMesh);
 
+    document.querySelector("#switch").addEventListener("click", () => {
+      mindarThree.switchCamera();
+    });
 
     await mindarThree.start();
     renderer.setAnimationLoop(() => {
